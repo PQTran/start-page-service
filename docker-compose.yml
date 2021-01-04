@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  service-app:
+    image: start-page-service
+    command: npm run start
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:8000"
